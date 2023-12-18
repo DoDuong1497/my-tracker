@@ -1,0 +1,122 @@
+body {
+  padding: 30px 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+h1,
+h3 {
+  font-weight: 600;
+  margin-bottom: 0;
+}
+
+button.btn {
+  padding: 8px 25px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+input.form-control,
+select.form-select {
+  padding: 10px 15px;
+  border-radius: 10px;
+  border: 1px solid #333;
+}
+
+.header {
+  margin-bottom: 50px;
+}
+
+.header-wrap {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.btn-signout {
+  border-radius: 18px;
+}
+
+.title-page {
+  margin-bottom: 50px;
+}
+
+.formTracker-input {
+  margin-bottom: 30px;
+}
+
+.formTracker-input .form-label {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.formTracker-btn {
+  display: flex;
+  justify-content: flex-end;
+}
+
+hr {
+  margin: 30px 0;
+}
+
+.listTracker-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.listTracker-header #search {
+  max-width: 250px;
+}
+
+.listTracker-filter,
+.listTracker-order {
+  display: flex;
+  align-items: center;
+  column-gap: 75px;
+}
+
+.listTracker-filter__title,
+.listTracker-order__title {
+  width: 100px;
+}
+
+.listTracker-filter {
+  margin-bottom: 30px;
+}
+
+.listTracker-order {
+  margin-bottom: 50px;
+}
+
+.listTracker-order__select {
+  width: 200px;
+}
+
+.listTracker-body table th,
+.listTracker-body table td {
+  padding: 20px 15px;
+}
+
+.listTracker-body table th {
+  font-weight: 600;
+}
+
+.listTracker-body table td.des-text {
+  line-height: 1.2;
+}
+
+.listTracker-body table td:nth-child(5) .author-list {
+  display: flex;
+  align-items: center;
+  column-gap: 5px;
+}
+
+.listTracker-body table td:nth-child(5) .author-list img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.listTracker-body table td #btnClose {
+  color: #fff;
+}

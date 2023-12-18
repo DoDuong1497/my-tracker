@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ISSUE TRACKER APP</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header-wrap">
+          <button type="button" class="btn btn-outline-primary btn-signout">
+            Sign out
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <div class="main">
+      <div class="container">
+        <h1 class="title-page text-center">ISSUE TRACKER</h1>
+        <form id="formTracker">
+          <div class="formTracker-input">
+            <div class="row">
+              <div class="col-md-12 mb-4">
+                <label for="title" class="form-label">Title</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="title"
+                  placeholder="Title..."
+                />
+              </div>
+              <div class="col-md-12 mb-4">
+                <label for="description" class="form-label">Description</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="description"
+                  placeholder="Describe the issue..."
+                />
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <label for="author" class="form-label">Author</label>
+                <select id="author" class="form-select">
+                  <option value="Sunny" selected>Sunny</option>
+                  <option value="Tony">Tony</option>
+                </select>
+              </div>
+              <div class="col-md-6">
+                <label for="severity" class="form-label">Severity</label>
+                <select id="severity" class="form-select">
+                  <option selected>Low</option>
+                  <option>Medium</option>
+                  <option>High</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <div class="formTracker-btn">
+            <button id="btnAdd" type="button" class="btn btn-primary btn-add">
+              Add
+            </button>
+          </div>
+        </form>
+
+        <hr />
+
+        <div class="listTracker">
+          <div class="listTracker-header">
+            <h3 class="listTracker-title">List Issue</h3>
+            <input
+              type="text"
+              class="form-control"
+              id="search"
+              placeholder="Search by description"
+            />
+          </div>
+
+          <div class="listTracker-filter">
+            <p class="listTracker-filter__title">Filter:</p>
+            <div class="listTracker-filter__btn-group">
+              <button type="button" class="btn btn-primary btn-all">All</button>
+              <button type="button" class="btn btn-success btn-open">
+                Open
+              </button>
+              <button type="button" class="btn btn-danger">Close</button>
+            </div>
+          </div>
+
+          <div class="listTracker-order">
+            <p class="listTracker-order__title">Order By:</p>
+            <div class="listTracker-order__select">
+              <select id="orderBy" class="form-select">
+                <option selected>Choose...</option>
+                <option>ASC</option>
+                <option>DESC</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="listTracker-body">
+            <table class="table table-hover align-middle">
+              <thead>
+                <tr>
+                  <th>STT</th>
+                  <th width="20%">Title</th>
+                  <th>Status</th>
+                  <th width="30%">Description</th>
+                  <th width="20%">Author</th>
+                  <th>Action</th>
+                </tr>
+              </thead>
+              <tbody id="list-issueTracker"></tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
