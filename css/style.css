@@ -9,10 +9,6 @@ h3 {
   margin-bottom: 0;
 }
 
-button.btn {
-  padding: 8px 25px;
-  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-}
 
 input.form-control,
 select.form-select {
@@ -125,3 +121,19 @@ hr {
 .listTracker-body table td #btnClose {
   color: #fff;
 }
+
+.mr-2 {
+  margin-right: 8px;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.page-item.active {
+  z-index: 1;
+  color: #fff;
+  background-color: #007bff;
+  border-color: #007bff;
+}
+

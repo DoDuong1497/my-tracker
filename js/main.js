@@ -16,7 +16,6 @@ function fetchData() {
 fetchData();
 
 // Render list issue tracker
-
 const trackerList = document.getElementById('list-issueTracker');
 
 function renderIssueTrackerList(data = []) {
